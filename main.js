@@ -1,3 +1,5 @@
+var a = 9,
+	b = 9;
 function createMatrix(rows, columns) {
 	var arr = new Array();
 	for (var i = 1; i <= rows; i++) {
@@ -8,10 +10,10 @@ function createMatrix(rows, columns) {
 	}
 	return arr;
 }
-var myArr = createMatrix(9, 9);
-for (var i = 1; i <= 9; i++) {
+var myArr = createMatrix(a, b);
+for (var i = 1; i <= a; i++) {
 	var p_cell = document.createElement('P');
-	for (var j = 1; j <= 9; j++) {
+	for (var j = 1; j <= b; j++) {
 		var p_cell = document.createElement('P');
 		if (i == j) {
 			p_cell.classList.add('green');
